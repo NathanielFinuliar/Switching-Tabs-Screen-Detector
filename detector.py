@@ -25,3 +25,7 @@ class Detector():
             if(keyboard.is_pressed('alt')):
                 if(keyboard.is_pressed('tab')):
                     self.is_detected()
+            elif(keyboard.is_pressed('ctrl')):
+                if(keyboard.is_pressed('win')):
+                    if(keyboard.is_pressed('left') or keyboard.is_pressed('right')):
+                        self.is_detected()
