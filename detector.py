@@ -20,6 +20,10 @@ class Detector():
         webhook.add_embed(embed)
         webhook.execute()
 
+    def is_detected(self):
+        self.capture()
+        self.webhook_Event()
+
     def detect(self):
         while True:
             if(keyboard.is_pressed('alt')):
