@@ -33,3 +33,10 @@ class Detector():
                 if(keyboard.is_pressed('win')):
                     if(keyboard.is_pressed('left') or keyboard.is_pressed('right')):
                         self.is_detected()
+
+if(__name__=="__main__"):
+    print("started!")
+    webhook_url = ""
+    image_path = "./ss.png"
+    detection = Detector(image_path, webhook_url)
+    detection.detect()
