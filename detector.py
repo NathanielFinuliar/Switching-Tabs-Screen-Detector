@@ -1,4 +1,4 @@
-import pyautogui, socket
+import pyautogui, socket, keyboard
 from discord_webhook import DiscordWebhook, DiscordEmbed
 
 class Detector():
