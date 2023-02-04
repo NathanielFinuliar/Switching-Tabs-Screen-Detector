@@ -1,3 +1,5 @@
+# Final Commit
+# Coded by: Nathaniel Finuliar 
 import pyautogui, socket, keyboard
 from discord_webhook import DiscordWebhook, DiscordEmbed
 
