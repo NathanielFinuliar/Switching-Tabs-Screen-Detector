@@ -1,5 +1,12 @@
-# Final Commit
-# Coded by: Nathaniel Finuliar 
+print("/"*39) 
+print("O"," "*16, " "*18, "1")  
+print("1"," "* 5, "SCREEN DETECTOR PROGRAM", " " *5,"0")
+print("0"," " * 3, "coded by Nathaniel Finuliar", " " *3,"1")
+print("1"," " * 12, "BSCOE 2-2", " " *12, "0")
+print("0"," "*16, " "*18, "1") 
+print("/"*39)
+print(" ")
+
 import pyautogui, socket, keyboard
 from discord_webhook import DiscordWebhook, DiscordEmbed
 
@@ -37,8 +44,10 @@ class Detector():
                         self.is_detected()
 
 if(__name__=="__main__"):
-    print("started!")
-    webhook_url = ""
+    print("We can commence the detector now")
+    print("")
+    print("Detecting...")
+    webhook_url = ("paste here the webhook url from discord")
     image_path = "./ss.png"
     detection = Detector(image_path, webhook_url)
     detection.detect()
